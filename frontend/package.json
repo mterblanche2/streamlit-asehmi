@@ -25,6 +25,7 @@
         "classnames": "latest",
         "cors": "latest",
         "date-fns": "latest",
+        "importlib": "latest",
         "localforage": "latest",
         "localforage-driver-memory": "latest",
         "next": "latest",
