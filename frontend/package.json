@@ -1,0 +1,41 @@
+{
+    "name": "cloudopti-app-component-frontend",
+    "version": "0.1.0",
+    "private": true,
+    "cacheDirectories": [
+        ".next/cache"
+    ],
+    "scripts": {
+        "dev": "next dev -p 3001",
+        "build": "next build",
+        "start": "next start -p 3001",
+        "start-streamlit": "cd ../app && streamlit run --server.port 4010 app.py",
+        "start-api": "python ../server/flask-api.py 8888",
+        "start-all": "concurrently \"npx next start -p 3001\" \"cd ../server && python flask-api.py 8888\" \"cd ../app && streamlit run --server.port 4010 app.py\"",
+        "typecheck": "tsc"
+    },
+    "dependencies": {
+        "@auth0/nextjs-auth0": "latest",
+        "@types/classnames": "latest",
+        "@types/jest": "latest",
+        "@types/node": "latest",
+        "@types/react": "latest",
+        "@types/react-dom": "latest",
+        "autoprefixer": "latest",
+        "classnames": "latest",
+        "cors": "latest",
+        "date-fns": "latest",
+        "localforage": "latest",
+        "localforage-driver-memory": "latest",
+        "next": "latest",
+        "next-transpile-modules": "latest",
+        "postcss": "latest",
+        "react": "latest",
+        "react-dom": "latest",
+        "reactjs-popup": "latest",
+        "streamlit-component-lib": "latest",
+        "tailwindcss": "latest",
+        "typescript": "latest",
+        "yarn": "latest"
+    }
+}
